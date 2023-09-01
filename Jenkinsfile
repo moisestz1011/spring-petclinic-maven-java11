@@ -23,16 +23,16 @@ pipeline {
 		}
 		stage('Sonarqube Analysis - SAST'){
 			steps{
-				withSonarQubeEnv ('SonarQube'){
+				withSonarQubeEnv ('SonarQubeToken'){
 			sh "mvn sonar:sonar \
-					-Dsonar.projectKey=NewJenkinsProject \
-				-Dsonar.host.url=http://54.161.181.11:9000"
+					-Dsonar.projectKey=spring-petclinic-maven-java11 \
+				-Dsonar.host.url=http://44.211.159.89:9000"
 				}
 			}
 		}
 		stage('Wait for SonarQube'){
 			steps{
-				timeout(time:2, unit: 'MINUTES'){
+				timeout(time:3, unit: 'MINUTES'){
 					script{
 						waitForQualityGate abortPipeline:true
 					}
