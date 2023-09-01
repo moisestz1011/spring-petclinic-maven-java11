@@ -40,15 +40,15 @@ pipeline {
                 }
             }
         }
-        stage("build & SonarQube analysis") {
-            steps {
-                script {
-                    withSonarQubeEnv(installationName: 'sonar-united-portal-server', credentialsId: 'SonarQubeToken')  {
-                        sh "mvn sonar:sonar"
-                    }
-                }
-            }
-        }
+        stage('Sonarqube Analysis - SAST'){
+			steps{
+				withSonarQubeEnv ('SonarQubeToken'){
+			sh "mvn sonar:sonar \
+					-Dsonar.projectKey=spring-petclinic-maven-java11 \
+				-Dsonar.host.url=http://localhost:9000"
+				}
+			}
+		}
         stage("publish maven to nexus") {
             steps {
                 script {
