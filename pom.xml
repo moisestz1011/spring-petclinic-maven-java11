@@ -236,7 +236,7 @@
                 <plugin>
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
-                    <version>3.6.0.1398</version>
+                    <version>3.9</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -288,7 +288,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>sonar</id>
             <activation>
@@ -296,13 +296,13 @@
             </activation>
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
+                <!--<sonar.host.url>
                     http://44.211.159.89:9000
                     mvn sonar:sonar mvn sonar:sonar -Dsonar.host.url=http://44.211.159.89:9000
                          -Dsonar.login=the-generated-token or login and -Dsonar.password=admin1
                 </sonar.host.url>
             </properties>
         </profile>
-    </profiles>
+    </profiles>-->
 
 </project>
