@@ -288,21 +288,4 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-    <!--<profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <!--<sonar.host.url>
-                    http://44.211.159.89:9000
-                    mvn sonar:sonar mvn sonar:sonar -Dsonar.host.url=http://44.211.159.89:9000
-                         -Dsonar.login=the-generated-token or login and -Dsonar.password=admin1
-                </sonar.host.url>
-            </properties>
-        </profile>
-    </profiles>-->
-
 </project>
