@@ -111,7 +111,7 @@
         <dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.6.0.1398</version>
+            <version>3.9.4</version>
             <!-- -->
         </dependency>
 
