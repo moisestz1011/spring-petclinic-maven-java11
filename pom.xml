@@ -108,12 +108,11 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
             <version>3.6.0.1398</version>
-            <!-- -->
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 
@@ -230,7 +229,7 @@
                 </executions>
             </plugin>
 
-        </plugins>
+        <!--</plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -239,7 +238,7 @@
                     <version>3.6.0.1398</version>
                 </plugin>
             </plugins>
-        </pluginManagement>
+        </pluginManagement>-->
 
     </build>
 
