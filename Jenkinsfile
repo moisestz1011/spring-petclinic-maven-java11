@@ -91,7 +91,7 @@ pipeline {
                 }
             }
         }
-        stage('Build container') {
+        /*stage('Build container') {
             steps {
                 script {
                     pom = readMavenPom file: "pom.xml";
@@ -99,7 +99,7 @@ pipeline {
                     sh "docker build -t petclinic:${TAG} ."
                 }
             }
-        }
+        }*/
         stage('Deploy container') {
             steps {
                 script {
