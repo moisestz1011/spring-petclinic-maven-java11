@@ -297,9 +297,9 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    <!--http://192.168.2.174:9000 -->
-                    <!-- mvn sonar:sonar mvn sonar:sonar -Dsonar.host.url=http://localhost:9000
-                         -Dsonar.login=the-generated-token or login and -Dsonar.password=-->
+                    http://44.211.159.89:9000
+                    mvn sonar:sonar mvn sonar:sonar -Dsonar.host.url=http://44.211.159.89:9000
+                         -Dsonar.login=the-generated-token or login and -Dsonar.password=admin1
                 </sonar.host.url>
             </properties>
         </profile>
